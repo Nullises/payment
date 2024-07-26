@@ -1,0 +1,18 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      [
+        'build',
+        '-t',
+        'us-central1-docker.pkg.dev/tienda-microservices-430521/ecommerce-ms/payment-prod',
+        '-f',
+        'dockerfile.prod',
+        '--platform=linux/amd64',
+        '.',
+      ]
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      [
+        'push',
+        'us-central1-docker.pkg.dev/tienda-microservices-430521/ecommerce-ms/payment-ms-prod',
+      ]
