@@ -16,6 +16,6 @@ steps:
         'push',
         'us-central1-docker.pkg.dev/tienda-microservices-430521/ecommerce-ms/payment-ms-prod',
       ]
-  options:
-    logging: CLOUD_LOGGING_ONLY
+options:
+  logging: CLOUD_LOGGING_ONLY
 
