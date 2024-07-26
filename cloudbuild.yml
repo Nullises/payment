@@ -4,7 +4,7 @@ steps:
       [
         'build',
         '-t',
-        'us-central1-docker.pkg.dev/tienda-microservices-430521/ecommerce-ms/payment-prod',
+        'us-central1-docker.pkg.dev/tienda-microservices-430521/ecommerce-ms/payment-ms-prod',
         '-f',
         'dockerfile.prod',
         '--platform=linux/amd64',
